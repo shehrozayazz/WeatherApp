@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.shehroz.weatherapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="Enter a City..."
+            android:textColor="@android:color/background_light"
+
+            android:textColorLink="?attr/actionModeSplitBackground"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/cityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_weight="0.3"
+            android:textSize="25sp"
+            android:shadowColor="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+        <Button
+            android:onClick="findWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Whats the weather"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+        <TextView
+
+            android:id="@+id/weatherTeleId"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather telecast"
+            android:textSize="25sp"
+            android:gravity="bottom"
+            android:layout_margin="20dp"
+
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
